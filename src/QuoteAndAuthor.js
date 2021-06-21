@@ -1,4 +1,5 @@
 import React from "react";
+import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
@@ -6,12 +7,13 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  root2: {
     flexGrow: 1,
   },
   paper: {
+    width: "auto",
     padding: theme.spacing(2),
-    textAlign: "center",
+    textAlign: "left",
     color: theme.palette.text.secondary,
   },
 }));
@@ -23,8 +25,8 @@ export default function QuoteAndAuthor(props) {
   html.style.backgroundColor = randomColor;
   return (
     <Container
-      className={classes.root}
-      style={{ backgroundColor: "white" }}
+      className={classes.root2}
+      style={{ padding: "200px", width: "auto" }}
       className="root"
     >
       <Grid container spacing={3}>
@@ -36,19 +38,18 @@ export default function QuoteAndAuthor(props) {
           style={{ color: randomColor }}
         >
           <Paper className={classes.paper}>
-            <h1 id="quote">"{props.quote}"</h1>
+            <Typography variant="h4" gutterBottom id="quote">
+              "{props.quote}"
+            </Typography>
             <h5 id="author">-{props.author ? props.author : "Unknown"}-</h5>
+            <Button
+              style={{ backgroundColor: randomColor }}
+              id="newquote"
+              onClick={props.handleClick}
+            >
+              NEXT
+            </Button>
           </Paper>
-        </Grid>
-
-        <Grid item>
-          <Button
-            style={{ backgroundColor: randomColor }}
-            id="newquote"
-            onClick={props.handleClick}
-          >
-            NEXT
-          </Button>
         </Grid>
       </Grid>
     </Container>

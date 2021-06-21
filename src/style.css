@@ -7,27 +7,41 @@ html {
 }
 #root{
   text-align: left;
-  margin: 40px;
+  margin: 0px 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width:80%;
-  margin: 0 10%;
+  height:100vh;
 }
 
 .quotebox {
-  width: 100%;
   border: 1px rgb(145, 126, 126) solid;
   border-radius: 10px;
   text-align: left;
-  max-width: 35rem
-  
+  width:100%;
 }
 
 #quote {
   margin: 20px;
   text-align: left;
 }
+
+
+#author {
+  margin: 20px;
+  font-style: italic;
+  text-align: left;
+}
+
+#newquote {
+  margin: 20px;
+  position: relative;
+  height: 35px;
+  width: 100px;
+  font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  color: white;
+}
+
 
 .fadeIn {
   opacity: 0;
@@ -44,21 +58,4 @@ html {
     opacity: 1;
     transform: translateY(0px);
   }
-}
-
-#author {
-  margin: 20px;
-  font-style: italic;
-  text-align: left;
-}
-
-#newquote {
-  margin: 20px;
-  position: relative;
-  border-radius: 5px;
-  height: 35px;
-  width: 100px;
-  font-weight: 700;
-  font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
-  color: white;
 }
