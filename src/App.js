@@ -1,55 +1,52 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
-import { Container, Button } from "@material-ui/core";
-import axios from "axios";
+import QuoteAndAuthor from "./QuoteAndAuthor";
+import quotes from "./QuotesDatabase";
+import "./style.css";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    height: "100vh",
-    padding: "50px 300px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "left",
-    color: theme.palette.text.secondary,
-  },
-  grid: {
-    border: "2px solid black",
-  },
-}));
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      quote: quotes[0].quote,
+      author: quotes[0].author
+    };
+  }
+  randomQuote() {
+    const randomNumber = Math.floor(Math.random() * quotes.length);
+    return quotes[randomNumber];
+  }
+  shuffleQuotes(array) {
+    return array.sort(() => Math.random() - 0.5);
+  }
 
-export default function App() {
-  const classes = useStyles();
+  handleClick = () => {
+    const generateRandomQuote = this.randomQuote();
+    this.setState({
+      quote: generateRandomQuote.quote,
+      author: generateRandomQuote.author
+    });
+    this.shuffleQuotes(quotes);
+  };
 
-  import axios from "axios";
-  axios.get("/thoughts.json").then((res) => {
-    console.log(res.data);
-  });
+  randomColor() {
+    const color = `rgb(
+      ${Math.floor(Math.random() * 155)},
+      ${Math.floor(Math.random() * 155)},
+      ${Math.floor(Math.random() * 155)})`;
+    return color;
+  }
 
-  return (
-    <Container className={classes.root}>
-      <Grid container spacing={3} className={classes.grid}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>Title</Paper>
-        </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>Thouhgt</Paper>
-        </Grid>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>xs=6</Paper>
-        </Grid>
-
-        <Grid item xs={3}>
-          <Button variant="contained" color="primary">
-            Next
-          </Button>
-        </Grid>
-      </Grid>
-    </Container>
-  );
+  render() {
+    return (
+      <div>
+        <QuoteAndAuthor
+          displayColor={this.randomColor}
+          handleClick={this.handleClick}
+          {...this.state}
+        />
+      </div>
+    );
+  }
 }
+
+export default App;
