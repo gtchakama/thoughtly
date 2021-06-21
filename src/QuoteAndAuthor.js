@@ -22,7 +22,11 @@ export default function QuoteAndAuthor(props) {
   const html = document.documentElement;
   html.style.backgroundColor = randomColor;
   return (
-    <Container style={{ backgroundColor: "white" }} className="quotebox">
+    <Container
+      className={classes.root}
+      style={{ backgroundColor: "white" }}
+      className="root"
+    >
       <Grid container spacing={3}>
         <Grid
           item

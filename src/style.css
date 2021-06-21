@@ -6,16 +6,20 @@ html {
   transition: background-color 1s;
 }
 #root{
+  text-align: left;
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width:80%;
   margin: 0 10%;
 }
 
 .quotebox {
-  height: auto;
   width: 100%;
   border: 1px rgb(145, 126, 126) solid;
   border-radius: 10px;
-  text-align: right;
+  text-align: left;
   max-width: 35rem
   
 }
@@ -45,6 +49,7 @@ html {
 #author {
   margin: 20px;
   font-style: italic;
+  text-align: left;
 }
 
 #newquote {
