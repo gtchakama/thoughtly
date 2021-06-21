@@ -2,19 +2,19 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import { Container } from "@material-ui/core";
+import { Container, Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     height: "100vh",
-    padding: "50px",
+    padding: "50px 300px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
   },
   paper: {
     padding: theme.spacing(2),
-    textAlign: "center",
+    textAlign: "left",
     color: theme.palette.text.secondary,
   },
   grid: {
@@ -29,25 +29,19 @@ export default function App() {
     <Container className={classes.root}>
       <Grid container spacing={3} className={classes.grid}>
         <Grid item xs={12}>
-          <Paper className={classes.paper}>xs=12</Paper>
+          <Paper className={classes.paper}>Title</Paper>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>Thouhgt</Paper>
+        </Grid>
+        <Grid item xs={12}>
           <Paper className={classes.paper}>xs=6</Paper>
         </Grid>
-        <Grid item xs={6}>
-          <Paper className={classes.paper}>xs=6</Paper>
-        </Grid>
+
         <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </Grid>
-        <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </Grid>
-        <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
-        </Grid>
-        <Grid item xs={3}>
-          <Paper className={classes.paper}>xs=3</Paper>
+          <Button variant="contained" color="primary">
+            Next
+          </Button>
         </Grid>
       </Grid>
     </Container>
