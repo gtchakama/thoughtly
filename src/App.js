@@ -4,13 +4,10 @@ import quotes from "./QuotesDatabase";
 import "./style.css";
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      quote: quotes[0].quote,
-      author: quotes[0].author,
-    };
-  }
+  state = {
+    quote: quotes[0].quote,
+    author: quotes[0].author,
+  };
   randomQuote() {
     const randomNumber = Math.floor(Math.random() * quotes.length);
     return quotes[randomNumber];
@@ -35,7 +32,6 @@ class App extends React.Component {
       ${Math.floor(Math.random() * 155)})`;
     return color;
   }
-
   render() {
     return (
       <div>

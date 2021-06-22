@@ -41,7 +41,7 @@ export default function QuoteAndAuthor(props) {
   return (
     <Container
       className={classes.root2}
-      style={{ padding: "200px", width: "auto" }}
+      // style={{ padding: "200px", width: "auto" }}
       className="root"
     >
       <Grid container spacing={3}>
