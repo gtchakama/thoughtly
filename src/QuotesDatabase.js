@@ -1,6 +1,11 @@
 const quotes = [
   {
     quote:
+      "If Google matched people up by their browsing history, it could be the greatest online dating website of all time.",
+    author: "Dating",
+  },
+  {
+    quote:
       "Theme parks can snap a crystal clear picture of you on a roller coaster at 70 mph, but bank cameras can't get a clear shot of a robber standing still.",
     author: "Camera",
   },
@@ -49,22 +54,22 @@ const quotes = [
   {
     quote:
       "(Go to bed, you'll feel better in the morning) is the human version of (Did you turn it off and turn it back on again?)",
-    author: "Lemon",
+    author: "Reboot",
   },
   {
     quote:
       "What if Earth is like one of those uncontacted tribes in South America, like the whole Galaxy knows we're here but they've agreed not to contact us until we figure it out for ourselves.",
-    author: "Lemon",
+    author: "Galaxy",
   },
   {
     quote:
       "Instead of colorizing photos, in 50 years we will be removing filters.",
-    author: "Lemon",
+    author: "Future",
   },
 
   {
     quote: "I've woken up over 10,000 times and I'm still not used to it",
-    author: "Lemon",
+    author: "Habbit",
   },
   {
     quote:
@@ -79,62 +84,62 @@ const quotes = [
   {
     quote:
       "Somewhere in the world, there is somebody with your dream job that hates going to work everyday.",
-    author: "Lemon",
+    author: "Dream Job",
   },
   {
     quote: "Christmas feels more like a deadline than a holiday.",
-    author: "Lemon",
+    author: "Holiday",
   },
   {
     quote:
       "(DO NOT TOUCH) would probably be a really unsettling thing to read in braille.",
-    author: "Lemon",
+    author: "Braille",
   },
   {
     quote:
       "Vehicles today can surf the web, link to your phone, stream music and videos, etc.. but they still can't perform a simple database lookup to tell you what the check engine light is on for.",
-    author: "Lemon",
+    author: "Vehicals",
   },
 
   {
     quote:
       "People who are goodlooking but have terrible personalities are basically real life click baits.",
-    author: "Lemon",
+    author: "Attitude",
   },
   {
     quote:
       "When you drink alcohol you are just borrowing happiness from tomorrow.",
-    author: "Lemon",
+    author: "Drunk",
   },
   {
     quote:
       "There should be a millenial edition of Monopoly where you just walk round the board paying rent, never able to buy anything.",
-    author: "Lemon",
+    author: "Monopoly",
   },
   {
     quote:
       "Gyms should have memberships where your fee goes down based on how often you go.",
-    author: "Lemon",
+    author: "Gym",
   },
   {
     quote:
       "My dog understand several human words. I don’t understand any dog barks. He may be smarter than me.",
-    author: "Lemon",
+    author: "Language",
   },
   {
     quote:
       "I recognize click bait almost every time, but still want to know what that child celebrity looks like today.",
-    author: "Lemon",
+    author: "Click Bait",
   },
   {
     quote:
       "If Google matched people up by their browsing history, it could be the greatest online dating website of all time.",
-    author: "Lemon",
+    author: "Dating",
   },
   {
     quote:
       "If aliens come to earth, we have to explain why we made dozens of movies in which we fight and kill them.",
-    author: "Lemon",
+    author: "Aliens",
   },
 ];
 export default quotes;

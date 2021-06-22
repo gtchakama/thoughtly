@@ -3,7 +3,7 @@
     "thoughtId": 1,
     "id": 1,
     "title": "Camera",
-    "thought":
+    "quote":
       "Theme parks can snap a crystal clear picture of you on a roller coaster at 70 mph, but bank cameras can't get a clear shot of a robber standing still.",
     "thoughtPicture": "Find Picture URL"
   },
@@ -11,7 +11,7 @@
     "thoughtId": 2,
     "id": 2,
     "title": "History",
-    "thought":
+    "quote":
       "If my calculator had a history, it would be more embarrassing than my browser history.",
     "thoughtPicture": "Find Picture URL"
   },
@@ -19,7 +19,7 @@
     "thoughtId": 3,
     "id": 3,
     "title": "Intentions",
-    "thought":
+    "quote":
       "Lawyers hope you get sued, doctors hope you get sick, cops hope you're criminal, mechanics hope you have car trouble, but only a thief wishes prosperity for you.",
     "thoughtPicture": "Find Picture URL"
   },
@@ -27,7 +27,7 @@
     "thoughtId": 4,
     "id": 4,
     "title": "Being Naive",
-    "thought":
+    "quote":
       "As a kid my parents taught me to not believe everything I see on TV, now I have to teach them to not believe everything they see on Facebook.",
     "thoughtPicture": "Find Picture URL"
   },
@@ -35,7 +35,7 @@
     "thoughtId": 5,
     "id": 5,
     "title": "Height",
-    "thought":
+    "quote":
       "Tall people are expected to use their reach to help shorter people, but if a tall person were to ask a short person to hand them something they dropped on the floor it'd be insulting.",
     "thoughtPicture": "Find Picture URL"
   },
@@ -43,7 +43,7 @@
     "thoughtId": 6,
     "id": 6,
     "title": "Wedding",
-    "thought":
+    "quote":
       "Whoever created the tradition of not seeing the bride in the wedding dress beforehand saved countless husbands everywhere from hours of dress shopping and will forever be a hero to all men",
     "thoughtPicture": "Find Picture URL"
   },
@@ -51,7 +51,7 @@
     "thoughtId": 7,
     "id": 7,
     "title": "Voice",
-    "thought":
+    "quote":
       "Being able to tolerate the sound of your own voice in a video is probably the highest form of self acceptance.",
     "thoughtPicture": "Find Picture URL"
   },
@@ -59,7 +59,7 @@
     "thoughtId": 8,
     "id": 8,
     "title": "Refrigerator",
-    "thought":
+    "quote":
       "We do not check the refrigerator multiple times to find new food, we check to see if our standards have dropped enough to eat what was available.",
     "thoughtPicture": "Find Picture URL"
   },
@@ -67,7 +67,7 @@
     "thoughtId": 9,
     "id": 9,
     "title": "Lemon",
-    "thought":
+    "quote":
       "Apparently, a lemon is not naturally occurring and is a hybrid developed by cross breeding a bitter orange and a citron. Life never gave us lemons; we invented them all by ourselves.",
     "thoughtPicture": "Find Picture URL"
   },
@@ -75,7 +75,7 @@
     "thoughtId": 10,
     "id": 10,
     "title": "Tobacco",
-    "thought":
+    "quote":
       "Tobacco companies kill their best customers and condom companies kill their future customers.",
     "thoughtPicture": "Find Picture URL"
   }
