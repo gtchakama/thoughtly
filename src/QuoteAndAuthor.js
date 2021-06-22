@@ -7,6 +7,7 @@ import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles((theme) => ({
   root2: {
@@ -72,8 +73,23 @@ export default function QuoteAndAuthor(props) {
               </div>
 
               <div className={classes.footerItem}>
-                <GitHubIcon className={classes.footerItem} />
-                <TwitterIcon />
+                <Link
+                  href="https://github.com/gtchakama"
+                  target="_blank"
+                  color="inherit"
+                  rel="noopener"
+                >
+                  <GitHubIcon className={classes.footerItem} />
+                </Link>
+
+                <Link
+                  href="https://twitter.com/gtchakama"
+                  target="_blank"
+                  color="inherit"
+                  rel="noopener"
+                >
+                  <TwitterIcon />
+                </Link>
               </div>
             </div>
           </Paper>
