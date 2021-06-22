@@ -1,13 +1,10 @@
-body {
-  margin: 0;
-}
+
 
 html {
   transition: background-color 1s;
 }
 #root{
   text-align: left;
-  margin: 0px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,8 +12,6 @@ html {
 }
 
 .quotebox {
-  border: 1px rgb(145, 126, 126) solid;
-  border-radius: 10px;
   text-align: left;
   width:100%;
 }
@@ -28,7 +23,7 @@ html {
 
 
 #author {
-  margin: 20px;
+  margin: 10px 20px;
   font-style: italic;
   text-align: left;
 }
@@ -38,7 +33,6 @@ html {
   position: relative;
   height: 35px;
   width: 100px;
-  font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
   color: white;
 }
 

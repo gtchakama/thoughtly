@@ -5,10 +5,24 @@ import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import TwitterIcon from "@material-ui/icons/Twitter";
 
 const useStyles = makeStyles((theme) => ({
   root2: {
     flexGrow: 1,
+  },
+  footer: {
+    display: "flex",
+  },
+  footerItem: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    margin: "0px 40px",
+  },
+  footerItemItem: {
+    margin: "10px",
   },
   paper: {
     width: "auto",
@@ -38,17 +52,30 @@ export default function QuoteAndAuthor(props) {
           style={{ color: randomColor }}
         >
           <Paper className={classes.paper}>
-            <Typography variant="h4" gutterBottom id="quote">
+            <Typography variant="h5" gutterBottom id="quote">
               "{props.quote}"
             </Typography>
-            <h5 id="author">-{props.author ? props.author : "Unknown"}-</h5>
-            <Button
-              style={{ backgroundColor: randomColor }}
-              id="newquote"
-              onClick={props.handleClick}
-            >
-              NEXT
-            </Button>
+
+            <Typography variant="body2" gutterBottom id="author">
+              --{props.author ? props.author : "Unknown"}--
+            </Typography>
+
+            <div className={classes.footer}>
+              <div style={{ flexGrow: 3 }}>
+                <Button
+                  style={{ backgroundColor: randomColor }}
+                  id="newquote"
+                  onClick={props.handleClick}
+                >
+                  NEXT
+                </Button>
+              </div>
+
+              <div className={classes.footerItem}>
+                <GitHubIcon className={classes.footerItem} />
+                <TwitterIcon />
+              </div>
+            </div>
           </Paper>
         </Grid>
       </Grid>
